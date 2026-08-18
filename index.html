@@ -3,51 +3,427 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MASOA | Boutique & Business</title>
+
+<title>MASOA – Boutique en ligne à Madagascar | Sakafo, Akanjo, Kiraro</title>
+
+<meta name="description" content="MASOA dia boutique en ligne eto Madagascar ahitana sakafo, akanjo ary kiraro. Jereo ny produits ary commande mora amin'ny WhatsApp.">
+
+<meta name="keywords" content="MASOA, boutique Madagascar, boutique en ligne Madagascar, sakafo, akanjo, kiraro, vêtements, chaussures">
+
+<meta name="author" content="MASOA">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://touds97.github.io/Masoa--boutique/">
+
+<meta property="og:title" content="MASOA – Boutique en ligne à Madagascar">
+<meta property="og:description" content="Sakafo, akanjo ary kiraro. Commander amin'ny WhatsApp.">
+<meta property="og:url" content="https://touds97.github.io/Masoa--boutique/">
+<meta property="og:type" content="website">
+
 <style>
-:root{--brown:#5a3825;--blue:#155e91;--cream:#fffaf3;--light:#eef5f9;--text:#24313a}
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:var(--text);background:var(--cream)}
-header{position:sticky;top:0;z-index:10;background:white;box-shadow:0 2px 12px #0001}
-nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:28px;font-weight:900;color:var(--brown);letter-spacing:2px}.logo span{color:var(--blue)}
-nav a{margin-left:18px;text-decoration:none;color:var(--text);font-weight:700}
-.hero{background:linear-gradient(135deg,var(--brown),var(--blue));color:white;padding:80px 20px}
-.hero-inner{max-width:1100px;margin:auto}.hero h1{font-size:52px;margin:0 0 12px}.hero p{font-size:20px;max-width:600px;line-height:1.6}
-.btn{display:inline-block;padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:800;margin:7px 7px 0 0}
-.btn-wa{background:#25D366;color:white}.btn-white{background:white;color:var(--brown)}
-section{max-width:1100px;margin:auto;padding:55px 20px}h2{font-size:32px;color:var(--brown);text-align:center;margin-top:0}
-.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.cat{background:white;border-radius:18px;padding:30px;text-align:center;box-shadow:0 6px 22px #00000010}.cat .icon{font-size:55px}.cat h3{color:var(--blue)}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{background:white;border-radius:16px;padding:20px;box-shadow:0 5px 18px #0001}.pic{height:160px;border-radius:12px;background:linear-gradient(135deg,#ead8c7,#d9edf8);display:grid;place-items:center;font-size:60px}.price{font-size:20px;font-weight:900;color:var(--blue)}
-.contact{background:var(--light);max-width:none}.contact-inner{max-width:900px;margin:auto;text-align:center}.wa{font-size:22px;font-weight:900;color:var(--blue)}
-footer{background:#332219;color:white;text-align:center;padding:25px}
-@media(max-width:700px){nav a{display:none}.hero h1{font-size:40px}.categories,.products{grid-template-columns:1fr}.hero{padding:60px 20px}}
+:root{
+--brown:#5a3825;
+--blue:#155e91;
+--cream:#fffaf3;
+--light:#eef5f9;
+--text:#24313a
+}
+
+*{
+box-sizing:border-box
+}
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+color:var(--text);
+background:var(--cream);
+line-height:1.6
+}
+
+header{
+position:sticky;
+top:0;
+z-index:10;
+background:white;
+box-shadow:0 2px 12px #0001
+}
+
+nav{
+max-width:1100px;
+margin:auto;
+padding:14px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between
+}
+
+.logo{
+font-size:28px;
+font-weight:900;
+color:var(--brown);
+letter-spacing:2px
+}
+
+.logo span{
+color:var(--blue)
+}
+
+nav a{
+margin-left:18px;
+text-decoration:none;
+color:var(--text);
+font-weight:700
+}
+
+.hero{
+background:linear-gradient(135deg,var(--brown),var(--blue));
+color:white;
+padding:80px 20px
+}
+
+.hero-inner{
+max-width:1100px;
+margin:auto
+}
+
+.hero h1{
+font-size:52px;
+margin:0 0 12px;
+line-height:1.2
+}
+
+.hero p{
+font-size:20px;
+max-width:650px;
+line-height:1.6
+}
+
+.btn{
+display:inline-block;
+padding:13px 20px;
+border-radius:10px;
+text-decoration:none;
+font-weight:800;
+margin:7px 7px 0 0
+}
+
+.btn-wa{
+background:#25D366;
+color:white
+}
+
+.btn-white{
+background:white;
+color:var(--brown)
+}
+
+section{
+max-width:1100px;
+margin:auto;
+padding:55px 20px
+}
+
+h2{
+font-size:32px;
+color:var(--brown);
+text-align:center;
+margin-top:0
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px
+}
+
+.cat{
+background:white;
+border-radius:18px;
+padding:30px;
+text-align:center;
+box-shadow:0 6px 22px #00000010
+}
+
+.cat .icon{
+font-size:55px
+}
+
+.cat h3{
+color:var(--blue)
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px
+}
+
+.product{
+background:white;
+border-radius:16px;
+padding:20px;
+box-shadow:0 5px 18px #0001
+}
+
+.pic{
+height:160px;
+border-radius:12px;
+background:linear-gradient(135deg,#ead8c7,#d9edf8);
+display:grid;
+place-items:center;
+font-size:60px
+}
+
+.price{
+font-size:20px;
+font-weight:900;
+color:var(--blue)
+}
+
+.contact{
+background:var(--light);
+max-width:none
+}
+
+.contact-inner{
+max-width:900px;
+margin:auto;
+text-align:center
+}
+
+.wa{
+font-size:22px;
+font-weight:900;
+color:var(--blue)
+}
+
+footer{
+background:#332219;
+color:white;
+text-align:center;
+padding:25px
+}
+
+@media(max-width:700px){
+
+nav a{
+display:none
+}
+
+.hero{
+padding:60px 20px
+}
+
+.hero h1{
+font-size:40px
+}
+
+.categories,
+.products{
+grid-template-columns:1fr
+}
+
+}
 </style>
 </head>
+
 <body>
-<header><nav><div class="logo">MAS<span>OA</span></div><div><a href="#accueil">Accueil</a><a href="#produits">Produits</a><a href="#contact">Contact</a></div></nav></header>
+
+<header>
+<nav>
+
+<div class="logo">
+MAS<span>OA</span>
+</div>
+
+<div>
+<a href="#accueil">Accueil</a>
+<a href="#produits">Produits</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+</header>
 
 <main>
-<section class="hero" id="accueil"><div class="hero-inner">
-<h1>Bienvenue chez MASOA</h1>
-<p>Ny boutique iray ahitanao <b>sakafo, akanjo ary kiraro</b>. Safidio izay ilainao ary mifandraisa aminay amin'ny WhatsApp raha hanao commande.</p>
-<a class="btn btn-wa" href="https://wa.me/261376204027?text=Salama%20MASOA%2C%20te%20hanao%20commande%20aho." target="_blank">💬 Commander sur WhatsApp</a>
-<a class="btn btn-white" href="#produits">🛍️ Hijery produits</a>
-</div></section>
 
-<section><h2>Inona no hitanao ao MASOA?</h2><div class="categories">
-<div class="cat"><div class="icon">🍲</div><h3>Sakafo</h3><p>Safidy sakafo ho an'ny filanao andavanandro.</p></div>
-<div class="cat"><div class="icon">👕</div><h3>Akanjo</h3><p>Akanjo isan-karazany ho an'ny rehetra.</p></div>
-<div class="cat"><div class="icon">👟</div><h3>Kiraro</h3><p>Kiraro amin'ny karazana sy style samihafa.</p></div>
-</div></section>
+<section class="hero" id="accueil">
 
-<section id="produits"><h2>Produits populaires</h2><div class="products">
-<div class="product"><div class="pic">🍚</div><h3>Sakafo</h3><p>Produit alimentaire</p><div class="price">Prix: Mifandraisa aminay</div><a class="btn btn-wa" href="https://wa.me/261341440368?text=Salama%20MASOA%2C%20te%20hahafantatra%20ny%20prix%20sakafo%20aho." target="_blank">Hanontany prix</a></div>
-<div class="product"><div class="pic">👕</div><h3>Akanjo</h3><p>Vêtements</p><div class="price">Prix: Mifandraisa aminay</div><a class="btn btn-wa" href="https://wa.me/261341440368?text=Salama%20MASOA%2C%20te%20hahafantatra%20ny%20prix%20akanjo%20aho." target="_blank">Hanontany prix</a></div>
-<div class="product"><div class="pic">👟</div><h3>Kiraro</h3><p>Chaussures</p><div class="price">Prix: Mifandraisa aminay</div><a class="btn btn-wa" href="https://wa.me/261341440368?text=Salama%20MASOA%2C%20te%20hahafantatra%20ny%20prix%20kiraro%20aho." target="_blank">Hanontany prix</a></div>
-</div></section>
+<div class="hero-inner">
 
-<section class="contact" id="contact"><div class="contact-inner"><h2>Contactez MASOA</h2><p>Raha mila prix, sary, disponibilité na hanao commande:</p><p class="wa">📱 WhatsApp: +261 34 14 403 68</p><a class="btn btn-wa" href="https://wa.me/261341440368?text=Salama%20MASOA%2C%20mila%20fanazavana%20momba%20ny%20produits%20aho." target="_blank">💬 Miresaka amin'ny WhatsApp</a></div></section>
+<h1>MASOA – Boutique en ligne à Madagascar</h1>
+
+<p>
+Ny boutique iray ahitanao
+<b>sakafo, akanjo ary kiraro</b>.
+Safidio izay ilainao ary mifandraisa aminay amin'ny WhatsApp raha hanao commande.
+</p>
+
+<a
+class="btn btn-wa"
+href="https://wa.me/261376204027?text=Salama%20MASOA%2C%20te%20hanao%20commande%20aho."
+target="_blank"
+rel="noopener">
+💬 Commander sur WhatsApp
+</a>
+
+<a class="btn btn-white" href="#produits">
+🛍️ Hijery produits
+</a>
+
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Inona no hitanao ao MASOA?</h2>
+
+<div class="categories">
+
+<div class="cat">
+<div class="icon">🍲</div>
+<h3>Sakafo</h3>
+<p>
+Safidy sakafo ho an'ny filanao andavanandro.
+</p>
+</div>
+
+<div class="cat">
+<div class="icon">👕</div>
+<h3>Akanjo</h3>
+<p>
+Akanjo isan-karazany ho an'ny rehetra.
+</p>
+</div>
+
+<div class="cat">
+<div class="icon">👟</div>
+<h3>Kiraro</h3>
+<p>
+Kiraro amin'ny karazana sy style samihafa.
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="produits">
+
+<h2>Produits populaires</h2>
+
+<div class="products">
+
+<div class="product">
+
+<div class="pic">🍚</div>
+
+<h3>Sakafo</h3>
+
+<p>Produit alimentaire</p>
+
+<div class="price">
+Prix: Mifandraisa aminay
+</div>
+
+<a
+class="btn btn-wa"
+href="https://wa.me/261376204027?text=Salama%20MASOA%2C%20te%20hahafantatra%20ny%20prix%20sakafo%20aho."
+target="_blank"
+rel="noopener">
+Hanontany prix
+</a>
+
+</div>
+
+
+<div class="product">
+
+<div class="pic">👕</div>
+
+<h3>Akanjo</h3>
+
+<p>Vêtements</p>
+
+<div class="price">
+Prix: Mifandraisa aminay
+</div>
+
+<a
+class="btn btn-wa"
+href="https://wa.me/261376204027?text=Salama%20MASOA%2C%20te%20hahafantatra%20ny%20prix%20akanjo%20aho."
+target="_blank"
+rel="noopener">
+Hanontany prix
+</a>
+
+</div>
+
+
+<div class="product">
+
+<div class="pic">👟</div>
+
+<h3>Kiraro</h3>
+
+<p>Chaussures</p>
+
+<div class="price">
+Prix: Mifandraisa aminay
+</div>
+
+<a
+class="btn btn-wa"
+href="https://wa.me/261376204027?text=Salama%20MASOA%2C%20te%20hahafantatra%20ny%20prix%20kiraro%20aho."
+target="_blank"
+rel="noopener">
+Hanontany prix
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<div class="contact-inner">
+
+<h2>Contactez MASOA</h2>
+
+<p>
+Raha mila prix, sary, disponibilité na hanao commande:
+</p>
+
+<p class="wa">
+📱 WhatsApp: +261 37 62 04 027
+</p>
+
+<a
+class="btn btn-wa"
+href="https://wa.me/261376204027?text=Salama%20MASOA%2C%20mila%20fanazavana%20momba%20ny%20produits%20aho."
+target="_blank"
+rel="noopener">
+💬 Miresaka amin'ny WhatsApp
+</a>
+
+</div>
+
+</section>
+
 </main>
-<footer>© 2026 MASOA — Boutique & Business</footer>
+
+
+<footer>
+© 2026 MASOA — Boutique en ligne à Madagascar
+</footer>
+
 </body>
 </html>
